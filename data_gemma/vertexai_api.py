@@ -23,11 +23,11 @@ import logging
 
 @dataclass(kw_only=True)
 class VertexAIModelConfig:
-  # ID of the GCP project where the model is hosted
+  # ID of the GCP project where the model endpoint is deployed
   project_id: str = None
-  # location where the model is hosted
+  # The region where the model endpoint is deployed e.g., us-central1
   location: str = None
-  # prediction endpoint id for the model
+  # ID of the endpoint to use to make calls to the model
   prediction_endpoint_id: str = None
 
 
